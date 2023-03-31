@@ -10,445 +10,280 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="signup">Registratie</a>
-            <a href="Webapp">Web App From Scratch</a>
-            <a href="CSS">CSS to the rescue</a>
-            <a href="Webapp">Progressive Web Apps</a>
-            <a href="Webapp">Browser Technologies</a>
-            <a href="Webapp">Real-Time Web</a>
-            <a href="Webapp">Human-Centered Design</a>
-        </nav>
-    </header>
-
-    <section>
-    <h1>Welkom bij de Minor Web Dev enquete</h1>
     <form>
-        <label for="name">Naam</label><br>
-        <input type="text" id="name" name="name" required> <br>
-        <label for="StudentNr">Studentnummer</label><br>
-        <input type="text" id="StudentNr" name="name" required>
-        <span>
-            <button>Submit</button>
-        </span>
-    </form>
+
+      <fieldset>
+        <section>
+            <legend>Persoonsgegevens</legend>
+            <label> Voornaam + Achternaam </label><br>
+            <input
+            type="text" 
+            name="name" 
+            id="name" 
+            placeholder="Naam + achternaam"
+            pattern="^\w+( \w+)*$"
+            title="Vul hier je naam en achternaam in"  
+            required
+            aria-required="true"
+            /><br>
+            
+            <label> Studentennummer </label><br>
+            <input
+            type="text"
+            name="studentnummer"
+            id="studentnummer"
+            placeholder="500858890"
+            pattern="[0-9]{9}"
+            title="Vul hier je studentnummer in"
+            required
+            aria-required="true"
+          />
+          </section>
+      </fieldset>
+
+    <!-- WAFS-->
+    <fieldset>
+        <section>
+        <legend> Web App From Scratch </legend>
+
+        <label> Docenten <br>
+            <input 
+            type="checkbox" 
+            id="docentenvak1" 
+            name="docentenvak1" 
+            aria-label="Docenten Web App From Scratch" 
+            checked 
+            required
+            aria-required="true"
+            title="Docenten die je had tijdens dit vak"
+            />
+            <span>Robert & Joost</span>
+        </label><br>
+
+        <label> Datum <br>
+            <input 
+            type="checkbox" 
+            id="datumvak1" 
+            name="datumvak1" 
+            aria-label="Docenten Web App From Scratch"  
+            checked 
+            required
+            aria-required="true"
+            title="Periode dat je het vak hebt gevolgd">
+            <span>6 - 27 Februari</span>
+        </label><br>
+        
+
+        
+
+        <label> Moeilijkheid lesstof: </label><br>
+        
+            <label>
+                <input 
+                type="radio" 
+                id="WAFS-Moeilijkheidsgraad" 
+                name="WAFS-Moeilijkheidsgraad" 
+                value="1" 
+                aria-label="Radiobutton 1" 
+                required
+                aria-required="true"
+                title="moeilijkheidsgraad 1">
+            <span>1</span>
+            </label>
+            <label>
+                <input 
+                type="radio" 
+                id="WAFS-Moeilijkheidsgraad" 
+                name="WAFS-Moeilijkheidsgraad" 
+                value="2" 
+                aria-label="Radiobutton 2" 
+                required
+                aria-required="true"
+                title="moeilijkheidsgraad 2">
+            <span>2</span>
+            </label>
+            <label>
+                <input 
+                type="radio" 
+                id="WAFS-Moeilijkheidsgraad" 
+                name="WAFS-Moeilijkheidsgraad" 
+                value="3" 
+                aria-label="Radiobutton 3" 
+                required
+                aria-required="true"
+                title="moeilijkheidsgraad 3">
+            <span>3</span>
+            </label>
+            <label>
+                <input 
+                type="radio" 
+                id="WAFS-Moeilijkheidsgraad" 
+                name="WAFS-Moeilijkheidsgraad" 
+                value="4" 
+                aria-label="Radiobutton 4" 
+                required
+                aria-required="true"
+                title="moeilijkheidsgraad 4">
+            <span>4</span>
+            </label>
+            <label>
+                <input 
+                type="radio" 
+                id="WAFS-Moeilijkheidsgraad"
+                name="WAFS-Moeilijkheidsgraad" 
+                value="5" 
+                aria-label="Radiobutton 5" 
+                required
+                aria-required="true"
+                title="moeilijkheidsgraad 5">
+            <span>5</span>
+            </label>
+            <label>
+                <input 
+                type="radio" 
+                id="WAFS-Moeilijkheidsgraad" 
+                name="WAFS-Moeilijkheidsgraad" 
+                value="6" 
+                aria-label="Radiobutton 6" 
+                required
+                aria-required="true"
+                title="moeilijkheidsgraad 6">
+            <span>6</span>
+            </label>
+            <label>
+                <input 
+                type="radio" 
+                id="WAFS-Moeilijkheidsgraad" 
+                name="WAFS-Moeilijkheidsgraad" 
+                value="7" 
+                aria-label="Radiobutton 7" 
+                required
+                aria-required="true"
+                title="moeilijkheidsgraad 7">
+            <span>7</span>
+            </label>
+            <label>
+                <input 
+                type="radio" 
+                id="WAFS-Moeilijkheidsgraad" 
+                name="WAFS-Moeilijkheidsgraad" 
+                value="8" 
+                aria-label="Radiobutton 8" 
+                required
+                aria-required="true"
+                title="moeilijkheidsgraad 8">
+            <span>8</span>
+            </label>
+            <label>
+                <input 
+                type="radio" 
+                id="WAFS-Moeilijkheidsgraad" 
+                name="WAFS-Moeilijkheidsgraad" 
+                value="9" 
+                aria-label="Radiobutton 9" 
+                required
+                aria-required="true"
+                title="moeilijkheidsgraad 9">
+            <span>9</span>
+            </label>
+            <label>
+                <input 
+                type="radio" 
+                id="WAFS-Moeilijkheidsgraad" 
+                name="WAFS-Moeilijkheidsgraad" 
+                value="10" 
+                aria-label="Radiobutton 10" 
+                required
+                aria-required="true"
+                title="moeilijkheidsgraad 10">
+            <span>10</span>
+            </label>
+
+                
+              
+        
+
+        
+ 
+
+        <label> Ervaring </label><br>
+        
+            <label>
+                <input 
+                type="radio" 
+                id="WAFS-ervaring" 
+                name="WAFS-ervaring" 
+                value="1" 
+                aria-label="Radiobutton 1" 
+                required
+                aria-required="true"
+                title="ervaringsniveau 1">
+            <span>1</span>
+            </label>
+            <label>
+                <input 
+                type="radio" 
+                id="WAFS-ervaring" 
+                name="WAFS-ervaring" 
+                value="2" 
+                aria-label="Radiobutton 2" 
+                required
+                aria-required="true"
+                title="ervaringsniveau 2">
+            <span>2</span>
+            </label>
+            <label>
+                <input 
+                type="radio" 
+                id="WAFS-ervaring" 
+                name="WAFS-ervaring" 
+                value="3" 
+                aria-label="Radiobutton 3" 
+                required
+                aria-required="true"
+                title="ervaringsniveau 3">
+            <span>3</span>
+            </label>
+            <label>
+                <input 
+                type="radio" 
+                id="WAFS-ervaring" 
+                name="WAFS-ervaring" 
+                value="4" 
+                aria-label="Radiobutton 4" 
+                required
+                aria-required="true"
+                title="ervaringsniveau 4">
+            <span>4</span>
+            </label>
+            <label>
+                <input 
+                type="radio" 
+                id="WAFS-ervaring" 
+                name="WAFS-ervaring" 
+                value="5" 
+                aria-label="Radiobutton 5" 
+                required
+                aria-required="true"
+                title="ervaringsniveau 1">
+            <span>5</span>
+            </label><br>
+        
+
+        <label> Uitleg: </label><br>
+        
+            <label for="uitleg"></label>
+                <textarea id="uitleg" name="uitleg" aria-label="uitleg"></textarea>
+
+        
     </section>
-
-    <section>
-        <a>Overzicht</a>
-        <h2>Web App from Scratch</h2>
-
-        <div>
-            <form>
-
-                <label for="naam">Naam:</label><br>
-                <input type="text" id="naam" name="naam"><br>
-                <label for="docenten">Docent(en):</label><br>
-                <input type="radio" id="docenten" name="docenten"><br>
-                <label for="weken">Weken waarin je het vak deed:</label><br>
-                <input type="text" id="weken" name="weken"><br><br>
-        </div>
-        <div>
-            <label for="beoordeling">Beoordeling op schaal 1-10:</label><br>
-            <input type="radio" id="beoordeling1" name="beoordeling" value="1">
-            <label for="beoordeling1">1</label><br>
-            <input type="radio" id="beoordeling2" name="beoordeling" value="2">
-            <label for="beoordeling2">2</label><br>
-            <input type="radio" id="beoordeling3" name="beoordeling" value="3">
-            <label for="beoordeling3">3</label><br>
-            <input type="radio" id="beoordeling4" name="beoordeling" value="4">
-            <label for="beoordeling4">4</label><br>
-            <input type="radio" id="beoordeling5" name="beoordeling" value="5">
-            <label for="beoordeling5">5</label><br>
-            <input type="radio" id="beoordeling6" name="beoordeling" value="6">
-            <label for="beoordeling6">6</label><br>
-            <input type="radio" id="beoordeling7" name="beoordeling" value="7">
-            <label for="beoordeling7">7</label><br>
-            <input type="radio" id="beoordeling8" name="beoordeling" value="8">
-            <label for="beoordeling8">8</label><br>
-            <input type="radio" id="beoordeling9" name="beoordeling" value="9">
-            <label for="beoordeling9">9</label><br>
-            <input type="radio" id="beoordeling10" name="beoordeling" value="10">
-            <label for="beoordeling10">10</label><br><br>
-
-            <label for="lesstof">Lesstof (hoe moeilijk is het):</label><br>
-            <input type="radio" id="lesstof1" name="lesstof" value="1">
-            <label for="lesstof1">1</label><br>
-            <input type="radio" id="lesstof2" name="lesstof" value="2">
-            <label for="lesstof2">2</label><br>
-            <input type="radio" id="lesstof3" name="lesstof" value="3">
-            <label for="lesstof3">3</label><br>
-            <input type="radio" id="lesstof4" name="lesstof" value="4">
-            <label for="lesstof4">4</label><br>
-            <input type="radio" id="lesstof5" name="lesstof" value="5">
-            <label for="lesstof5">5</label><br><br>
-
-            <label for="uitleg">Uitleg (hoe duidelijk is het uitgelegd):</label><br>
-            <input type="radio" id="uitleg1" name="uitleg" value="1">
-            <label for="uitleg1">1</label><br>
-            <input type="radio" id="uitleg2" name="uitleg" value="2">
-            <label for="uitleg2">2</label><br>
-            <input type="radio" id="uitleg3" name="uitleg" value="3">
-            <label for="uitleg3">3</label><br>
-            <input type="radio" id="uitleg4" name="uitleg" value="4">
-            <label for="uitleg4">4</label><br>
-            <input type="radio" id="uitleg5" name="uitleg" value="5">
-            <label for="uitleg5">5</label><br><br>
+    </fieldset>
+    
 
 
+    <input type="submit" value="Versturen" aria-label="Button om de enquete te versturen">
 
-            <label for='eigeninzicht'>Eigen inzicht (hoe goed snap je het): </label> <br>
-            <textarea id='eigeninzicht' name='eigeninzicht' rows='5' cols='50'></textarea> <br> <br>
-        </div>
-        <button>Submit</button>
-        </form>
-    </section>
-
-    <section>
-        <h2>CSS to the rescue</h2>
-
-        <div>
-            <form>
-
-                <label for="naam">Naam:</label><br>
-                <input type="text" id="naam" name="naam"><br>
-                <label for="docenten">Docent(en):</label><br>
-                <input type="radio" id="docenten" name="docenten"><br>
-                <label for="weken">Weken waarin je het vak deed:</label><br>
-                <input type="text" id="weken" name="weken"><br><br>
-        </div>
-        <div>
-            <label for="beoordeling">Beoordeling op schaal 1-10:</label><br>
-            <input type="radio" id="beoordeling1" name="beoordeling" value="1">
-            <label for="beoordeling1">1</label><br>
-            <input type="radio" id="beoordeling2" name="beoordeling" value="2">
-            <label for="beoordeling2">2</label><br>
-            <input type="radio" id="beoordeling3" name="beoordeling" value="3">
-            <label for="beoordeling3">3</label><br>
-            <input type="radio" id="beoordeling4" name="beoordeling" value="4">
-            <label for="beoordeling4">4</label><br>
-            <input type="radio" id="beoordeling5" name="beoordeling" value="5">
-            <label for="beoordeling5">5</label><br>
-            <input type="radio" id="beoordeling6" name="beoordeling" value="6">
-            <label for="beoordeling6">6</label><br>
-            <input type="radio" id="beoordeling7" name="beoordeling" value="7">
-            <label for="beoordeling7">7</label><br>
-            <input type="radio" id="beoordeling8" name="beoordeling" value="8">
-            <label for="beoordeling8">8</label><br>
-            <input type="radio" id="beoordeling9" name="beoordeling" value="9">
-            <label for="beoordeling9">9</label><br>
-            <input type="radio" id="beoordeling10" name="beoordeling" value="10">
-            <label for="beoordeling10">10</label><br><br>
-
-            <label for="lesstof">Lesstof (hoe moeilijk is het):</label><br>
-            <input type="radio" id="lesstof1" name="lesstof" value="1">
-            <label for="lesstof1">1</label><br>
-            <input type="radio" id="lesstof2" name="lesstof" value="2">
-            <label for="lesstof2">2</label><br>
-            <input type="radio" id="lesstof3" name="lesstof" value="3">
-            <label for="lesstof3">3</label><br>
-            <input type="radio" id="lesstof4" name="lesstof" value="4">
-            <label for="lesstof4">4</label><br>
-            <input type="radio" id="lesstof5" name="lesstof" value="5">
-            <label for="lesstof5">5</label><br><br>
-
-            <label for="uitleg">Uitleg (hoe duidelijk is het uitgelegd):</label><br>
-            <input type="radio" id="uitleg1" name="uitleg" value="1">
-            <label for="uitleg1">1</label><br>
-            <input type="radio" id="uitleg2" name="uitleg" value="2">
-            <label for="uitleg2">2</label><br>
-            <input type="radio" id="uitleg3" name="uitleg" value="3">
-            <label for="uitleg3">3</label><br>
-            <input type="radio" id="uitleg4" name="uitleg" value="4">
-            <label for="uitleg4">4</label><br>
-            <input type="radio" id="uitleg5" name="uitleg" value="5">
-            <label for="uitleg5">5</label><br><br>
-
-
-
-            <label for='eigeninzicht'>Eigen inzicht (hoe goed snap je het): </label> <br>
-            <textarea id='eigeninzicht' name='eigeninzicht' rows='5' cols='50'></textarea> <br> <br>
-        </div>
-        <button>Submit</button>
-        </form>
-    </section>
-
-    <section>
-        <h2>Progressive Web Apps</h2>
-
-        <div>
-            <form>
-
-                <label for="naam">Naam:</label><br>
-                <input type="text" id="naam" name="naam"><br>
-                <label for="docenten">Docent(en):</label><br>
-                <input type="radio" id="docenten" name="docenten"><br>
-                <label for="weken">Weken waarin je het vak deed:</label><br>
-                <input type="text" id="weken" name="weken"><br><br>
-        </div>
-        <div>
-            <label for="beoordeling">Beoordeling op schaal 1-10:</label><br>
-            <input type="radio" id="beoordeling1" name="beoordeling" value="1">
-            <label for="beoordeling1">1</label><br>
-            <input type="radio" id="beoordeling2" name="beoordeling" value="2">
-            <label for="beoordeling2">2</label><br>
-            <input type="radio" id="beoordeling3" name="beoordeling" value="3">
-            <label for="beoordeling3">3</label><br>
-            <input type="radio" id="beoordeling4" name="beoordeling" value="4">
-            <label for="beoordeling4">4</label><br>
-            <input type="radio" id="beoordeling5" name="beoordeling" value="5">
-            <label for="beoordeling5">5</label><br>
-            <input type="radio" id="beoordeling6" name="beoordeling" value="6">
-            <label for="beoordeling6">6</label><br>
-            <input type="radio" id="beoordeling7" name="beoordeling" value="7">
-            <label for="beoordeling7">7</label><br>
-            <input type="radio" id="beoordeling8" name="beoordeling" value="8">
-            <label for="beoordeling8">8</label><br>
-            <input type="radio" id="beoordeling9" name="beoordeling" value="9">
-            <label for="beoordeling9">9</label><br>
-            <input type="radio" id="beoordeling10" name="beoordeling" value="10">
-            <label for="beoordeling10">10</label><br><br>
-
-            <label for="lesstof">Lesstof (hoe moeilijk is het):</label><br>
-            <input type="radio" id="lesstof1" name="lesstof" value="1">
-            <label for="lesstof1">1</label><br>
-            <input type="radio" id="lesstof2" name="lesstof" value="2">
-            <label for="lesstof2">2</label><br>
-            <input type="radio" id="lesstof3" name="lesstof" value="3">
-            <label for="lesstof3">3</label><br>
-            <input type="radio" id="lesstof4" name="lesstof" value="4">
-            <label for="lesstof4">4</label><br>
-            <input type="radio" id="lesstof5" name="lesstof" value="5">
-            <label for="lesstof5">5</label><br><br>
-
-            <label for="uitleg">Uitleg (hoe duidelijk is het uitgelegd):</label><br>
-            <input type="radio" id="uitleg1" name="uitleg" value="1">
-            <label for="uitleg1">1</label><br>
-            <input type="radio" id="uitleg2" name="uitleg" value="2">
-            <label for="uitleg2">2</label><br>
-            <input type="radio" id="uitleg3" name="uitleg" value="3">
-            <label for="uitleg3">3</label><br>
-            <input type="radio" id="uitleg4" name="uitleg" value="4">
-            <label for="uitleg4">4</label><br>
-            <input type="radio" id="uitleg5" name="uitleg" value="5">
-            <label for="uitleg5">5</label><br><br>
-
-
-
-            <label for='eigeninzicht'>Eigen inzicht (hoe goed snap je het): </label> <br>
-            <textarea id='eigeninzicht' name='eigeninzicht' rows='5' cols='50'></textarea> <br> <br>
-        </div>
-        <button>Submit</button>
-        </form>
-    </section>
-
-    <section>
-        <h2>Browser Technologies</h2>
-
-        <div>
-            <form>
-
-                <label for="naam">Naam:</label><br>
-                <input type="text" id="naam" name="naam"><br>
-                <label for="docenten">Docent(en):</label><br>
-                <input type="radio" id="docenten" name="docenten"><br>
-                <label for="weken">Weken waarin je het vak deed:</label><br>
-                <input type="text" id="weken" name="weken"><br><br>
-        </div>
-        <div>
-            <label for="beoordeling">Beoordeling op schaal 1-10:</label><br>
-            <input type="radio" id="beoordeling1" name="beoordeling" value="1">
-            <label for="beoordeling1">1</label><br>
-            <input type="radio" id="beoordeling2" name="beoordeling" value="2">
-            <label for="beoordeling2">2</label><br>
-            <input type="radio" id="beoordeling3" name="beoordeling" value="3">
-            <label for="beoordeling3">3</label><br>
-            <input type="radio" id="beoordeling4" name="beoordeling" value="4">
-            <label for="beoordeling4">4</label><br>
-            <input type="radio" id="beoordeling5" name="beoordeling" value="5">
-            <label for="beoordeling5">5</label><br>
-            <input type="radio" id="beoordeling6" name="beoordeling" value="6">
-            <label for="beoordeling6">6</label><br>
-            <input type="radio" id="beoordeling7" name="beoordeling" value="7">
-            <label for="beoordeling7">7</label><br>
-            <input type="radio" id="beoordeling8" name="beoordeling" value="8">
-            <label for="beoordeling8">8</label><br>
-            <input type="radio" id="beoordeling9" name="beoordeling" value="9">
-            <label for="beoordeling9">9</label><br>
-            <input type="radio" id="beoordeling10" name="beoordeling" value="10">
-            <label for="beoordeling10">10</label><br><br>
-
-            <label for="lesstof">Lesstof (hoe moeilijk is het):</label><br>
-            <input type="radio" id="lesstof1" name="lesstof" value="1">
-            <label for="lesstof1">1</label><br>
-            <input type="radio" id="lesstof2" name="lesstof" value="2">
-            <label for="lesstof2">2</label><br>
-            <input type="radio" id="lesstof3" name="lesstof" value="3">
-            <label for="lesstof3">3</label><br>
-            <input type="radio" id="lesstof4" name="lesstof" value="4">
-            <label for="lesstof4">4</label><br>
-            <input type="radio" id="lesstof5" name="lesstof" value="5">
-            <label for="lesstof5">5</label><br><br>
-
-            <label for="uitleg">Uitleg (hoe duidelijk is het uitgelegd):</label><br>
-            <input type="radio" id="uitleg1" name="uitleg" value="1">
-            <label for="uitleg1">1</label><br>
-            <input type="radio" id="uitleg2" name="uitleg" value="2">
-            <label for="uitleg2">2</label><br>
-            <input type="radio" id="uitleg3" name="uitleg" value="3">
-            <label for="uitleg3">3</label><br>
-            <input type="radio" id="uitleg4" name="uitleg" value="4">
-            <label for="uitleg4">4</label><br>
-            <input type="radio" id="uitleg5" name="uitleg" value="5">
-            <label for="uitleg5">5</label><br><br>
-
-
-
-            <label for='eigeninzicht'>Eigen inzicht (hoe goed snap je het): </label> <br>
-            <textarea id='eigeninzicht' name='eigeninzicht' rows='5' cols='50'></textarea> <br> <br>
-        </div>
-        <button>Submit</button>
-        </form>
-    </section>
-
-    <section>
-        <h2>Real-Time Web</h2>
-
-        <div>
-            <form>
-
-                <label for="naam">Naam:</label><br>
-                <input type="text" id="naam" name="naam"><br>
-                <label for="docenten">Docent(en):</label><br>
-                <input type="radio" id="docenten" name="docenten"><br>
-                <label for="weken">Weken waarin je het vak deed:</label><br>
-                <input type="text" id="weken" name="weken"><br><br>
-        </div>
-        <div>
-            <label for="beoordeling">Beoordeling op schaal 1-10:</label><br>
-            <input type="radio" id="beoordeling1" name="beoordeling" value="1">
-            <label for="beoordeling1">1</label><br>
-            <input type="radio" id="beoordeling2" name="beoordeling" value="2">
-            <label for="beoordeling2">2</label><br>
-            <input type="radio" id="beoordeling3" name="beoordeling" value="3">
-            <label for="beoordeling3">3</label><br>
-            <input type="radio" id="beoordeling4" name="beoordeling" value="4">
-            <label for="beoordeling4">4</label><br>
-            <input type="radio" id="beoordeling5" name="beoordeling" value="5">
-            <label for="beoordeling5">5</label><br>
-            <input type="radio" id="beoordeling6" name="beoordeling" value="6">
-            <label for="beoordeling6">6</label><br>
-            <input type="radio" id="beoordeling7" name="beoordeling" value="7">
-            <label for="beoordeling7">7</label><br>
-            <input type="radio" id="beoordeling8" name="beoordeling" value="8">
-            <label for="beoordeling8">8</label><br>
-            <input type="radio" id="beoordeling9" name="beoordeling" value="9">
-            <label for="beoordeling9">9</label><br>
-            <input type="radio" id="beoordeling10" name="beoordeling" value="10">
-            <label for="beoordeling10">10</label><br><br>
-
-            <label for="lesstof">Lesstof (hoe moeilijk is het):</label><br>
-            <input type="radio" id="lesstof1" name="lesstof" value="1">
-            <label for="lesstof1">1</label><br>
-            <input type="radio" id="lesstof2" name="lesstof" value="2">
-            <label for="lesstof2">2</label><br>
-            <input type="radio" id="lesstof3" name="lesstof" value="3">
-            <label for="lesstof3">3</label><br>
-            <input type="radio" id="lesstof4" name="lesstof" value="4">
-            <label for="lesstof4">4</label><br>
-            <input type="radio" id="lesstof5" name="lesstof" value="5">
-            <label for="lesstof5">5</label><br><br>
-
-            <label for="uitleg">Uitleg (hoe duidelijk is het uitgelegd):</label><br>
-            <input type="radio" id="uitleg1" name="uitleg" value="1">
-            <label for="uitleg1">1</label><br>
-            <input type="radio" id="uitleg2" name="uitleg" value="2">
-            <label for="uitleg2">2</label><br>
-            <input type="radio" id="uitleg3" name="uitleg" value="3">
-            <label for="uitleg3">3</label><br>
-            <input type="radio" id="uitleg4" name="uitleg" value="4">
-            <label for="uitleg4">4</label><br>
-            <input type="radio" id="uitleg5" name="uitleg" value="5">
-            <label for="uitleg5">5</label><br><br>
-
-
-
-            <label for='eigeninzicht'>Eigen inzicht (hoe goed snap je het): </label> <br>
-            <textarea id='eigeninzicht' name='eigeninzicht' rows='5' cols='50'></textarea> <br> <br>
-        </div>
-        <button>Submit</button>
-        </form>
-    </section>
-
-    <section>
-        <h2>Human-Centered Design</h2>
-
-        <div>
-            <form>
-
-                <label for="naam">Naam:</label><br>
-                <input type="text" id="naam" name="naam"><br>
-                <label for="docenten">Docent(en):</label><br>
-                <input type="radio" id="docenten" name="docenten"><br>
-                <label for="weken">Weken waarin je het vak deed:</label><br>
-                <input type="text" id="weken" name="weken"><br><br>
-        </div>
-        <div>
-            <label for="beoordeling">Beoordeling op schaal 1-10:</label><br>
-            <input type="radio" id="beoordeling1" name="beoordeling" value="1">
-            <label for="beoordeling1">1</label><br>
-            <input type="radio" id="beoordeling2" name="beoordeling" value="2">
-            <label for="beoordeling2">2</label><br>
-            <input type="radio" id="beoordeling3" name="beoordeling" value="3">
-            <label for="beoordeling3">3</label><br>
-            <input type="radio" id="beoordeling4" name="beoordeling" value="4">
-            <label for="beoordeling4">4</label><br>
-            <input type="radio" id="beoordeling5" name="beoordeling" value="5">
-            <label for="beoordeling5">5</label><br>
-            <input type="radio" id="beoordeling6" name="beoordeling" value="6">
-            <label for="beoordeling6">6</label><br>
-            <input type="radio" id="beoordeling7" name="beoordeling" value="7">
-            <label for="beoordeling7">7</label><br>
-            <input type="radio" id="beoordeling8" name="beoordeling" value="8">
-            <label for="beoordeling8">8</label><br>
-            <input type="radio" id="beoordeling9" name="beoordeling" value="9">
-            <label for="beoordeling9">9</label><br>
-            <input type="radio" id="beoordeling10" name="beoordeling" value="10">
-            <label for="beoordeling10">10</label><br><br>
-
-            <label for="lesstof">Lesstof (hoe moeilijk is het):</label><br>
-            <input type="radio" id="lesstof1" name="lesstof" value="1">
-            <label for="lesstof1">1</label><br>
-            <input type="radio" id="lesstof2" name="lesstof" value="2">
-            <label for="lesstof2">2</label><br>
-            <input type="radio" id="lesstof3" name="lesstof" value="3">
-            <label for="lesstof3">3</label><br>
-            <input type="radio" id="lesstof4" name="lesstof" value="4">
-            <label for="lesstof4">4</label><br>
-            <input type="radio" id="lesstof5" name="lesstof" value="5">
-            <label for="lesstof5">5</label><br><br>
-
-            <label for="uitleg">Uitleg (hoe duidelijk is het uitgelegd):</label><br>
-            <input type="radio" id="uitleg1" name="uitleg" value="1">
-            <label for="uitleg1">1</label><br>
-            <input type="radio" id="uitleg2" name="uitleg" value="2">
-            <label for="uitleg2">2</label><br>
-            <input type="radio" id="uitleg3" name="uitleg" value="3">
-            <label for="uitleg3">3</label><br>
-            <input type="radio" id="uitleg4" name="uitleg" value="4">
-            <label for="uitleg4">4</label><br>
-            <input type="radio" id="uitleg5" name="uitleg" value="5">
-            <label for="uitleg5">5</label><br><br>
-
-
-
-            <label for='eigeninzicht'>Eigen inzicht (hoe goed snap je het): </label> <br>
-            <textarea id='eigeninzicht' name='eigeninzicht' rows='5' cols='50'></textarea> <br> <br>
-        </div>
-        <button>Submit</button>
-        </form>
-    </section>
+</form>
 
     <section>
         <h2>Bedankt voor het invullen van de minor web enquete</h2>

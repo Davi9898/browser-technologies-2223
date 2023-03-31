@@ -4,55 +4,28 @@
     padding: 0;
   }
   
-/* !!!!!!!!!!!!!!! HEADER !!!!!!!!!!!!!!!! */
 
-header {
+body {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    position: absolute;
-    left: -100vw;
-    height: 100vh;
 }
-
-a {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(226, 213, 213);
-    padding: 1em;
+fieldset {
     margin: 1em;
-    border-radius: 1em;
-    text-decoration: none;
-    color: black;
-    outline: 1px solid black;
-    align-items: center;
+    width: 100%;
+    border: 0;
 }
 
-/* Welkom pagina */
-
-section:nth-of-type(1) {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    left: -100vw;
+fieldset:nth-of-type(1) section {
+    margin-left: 10em;
 }
 
-section:nth-of-type(1) h1 {
-    align-self: center;
+fieldset:nth-of-type(2) section {
+    margin-left: 10em;
 }
 
-section:nth-of-type(1) span {
-    display: flex;
-    margin-top: 1em;
-}
-
-/* Web App From Scratch */
-
-section:nth-of-type(2) {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+form {
+    max-width: 500px;
+    width:100%;
 }
