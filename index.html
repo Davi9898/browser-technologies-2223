@@ -5,291 +5,1184 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>Minor Web Enquete</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
+
+    <header>
+        <h1>Minor Webdevelopment enquête</h1>
+    </header>
+
     <form>
 
-      <fieldset>
-        <section>
-            <legend>Persoonsgegevens</legend>
-            <label> Voornaam + Achternaam </label><br>
-            <input
-            type="text" 
-            name="name" 
-            id="name" 
-            placeholder="Naam + achternaam"
-            pattern="^\w+( \w+)*$"
-            title="Vul hier je naam en achternaam in"  
-            required
-            aria-required="true"
-            /><br>
-            
-            <label> Studentennummer </label><br>
-            <input
-            type="text"
-            name="studentnummer"
-            id="studentnummer"
-            placeholder="500858890"
-            pattern="[0-9]{9}"
-            title="Vul hier je studentnummer in"
-            required
-            aria-required="true"
-          />
-          </section>
-      </fieldset>
+        <fieldset>
+            <section>
+                <legend>Persoonsgegevens</legend>
+                <p>Welkom bij de afsluitingsenquête van de Minor Web Development.</p>
+                <h2>Voornaam + Achternaam</h2>
+                <label>
+                    <input type="text" name="name" id="name" placeholder="Naam + achternaam"
+                        title="Vul hier je naam en achternaam in" required aria-required="true" />
+                </label>
+                <div>
+                    <h2>Studentnummer</h2>
+                    <label>
+                        <input type="text" name="studentnummer" id="studentnummer" placeholder="500858890"
+                        pattern="[5-6][0-9]{8}" title="Vul hier je studentnummer in" required aria-required="true" />
+                    </label>
+                </div>
+            </section>
+        </fieldset>
 
-    <!-- WAFS-->
-    <fieldset>
-        <section>
-        <legend> Web App From Scratch </legend>
+        <!-- WAFS-->
+        <fieldset>
+            <section>
+                <legend> Web App From Scratch </legend>
 
-        <label> Docenten <br>
-            <input 
-            type="checkbox" 
-            id="docentenvak1" 
-            name="docentenvak1" 
-            aria-label="Docenten Web App From Scratch" 
-            checked 
-            required
-            aria-required="true"
-            title="Docenten die je had tijdens dit vak"
-            />
-            <span>Robert & Joost</span>
-        </label><br>
-
-        <label> Datum <br>
-            <input 
-            type="checkbox" 
-            id="datumvak1" 
-            name="datumvak1" 
-            aria-label="Docenten Web App From Scratch"  
-            checked 
-            required
-            aria-required="true"
-            title="Periode dat je het vak hebt gevolgd">
-            <span>6 - 27 Februari</span>
-        </label><br>
-        
-
-        
-
-        <label> Moeilijkheid lesstof: </label><br>
-        
-            <label>
-                <input 
-                type="radio" 
-                id="WAFS-Moeilijkheidsgraad" 
-                name="WAFS-Moeilijkheidsgraad" 
-                value="1" 
-                aria-label="Radiobutton 1" 
-                required
-                aria-required="true"
-                title="moeilijkheidsgraad 1">
-            <span>1</span>
-            </label>
-            <label>
-                <input 
-                type="radio" 
-                id="WAFS-Moeilijkheidsgraad" 
-                name="WAFS-Moeilijkheidsgraad" 
-                value="2" 
-                aria-label="Radiobutton 2" 
-                required
-                aria-required="true"
-                title="moeilijkheidsgraad 2">
-            <span>2</span>
-            </label>
-            <label>
-                <input 
-                type="radio" 
-                id="WAFS-Moeilijkheidsgraad" 
-                name="WAFS-Moeilijkheidsgraad" 
-                value="3" 
-                aria-label="Radiobutton 3" 
-                required
-                aria-required="true"
-                title="moeilijkheidsgraad 3">
-            <span>3</span>
-            </label>
-            <label>
-                <input 
-                type="radio" 
-                id="WAFS-Moeilijkheidsgraad" 
-                name="WAFS-Moeilijkheidsgraad" 
-                value="4" 
-                aria-label="Radiobutton 4" 
-                required
-                aria-required="true"
-                title="moeilijkheidsgraad 4">
-            <span>4</span>
-            </label>
-            <label>
-                <input 
-                type="radio" 
-                id="WAFS-Moeilijkheidsgraad"
-                name="WAFS-Moeilijkheidsgraad" 
-                value="5" 
-                aria-label="Radiobutton 5" 
-                required
-                aria-required="true"
-                title="moeilijkheidsgraad 5">
-            <span>5</span>
-            </label>
-            <label>
-                <input 
-                type="radio" 
-                id="WAFS-Moeilijkheidsgraad" 
-                name="WAFS-Moeilijkheidsgraad" 
-                value="6" 
-                aria-label="Radiobutton 6" 
-                required
-                aria-required="true"
-                title="moeilijkheidsgraad 6">
-            <span>6</span>
-            </label>
-            <label>
-                <input 
-                type="radio" 
-                id="WAFS-Moeilijkheidsgraad" 
-                name="WAFS-Moeilijkheidsgraad" 
-                value="7" 
-                aria-label="Radiobutton 7" 
-                required
-                aria-required="true"
-                title="moeilijkheidsgraad 7">
-            <span>7</span>
-            </label>
-            <label>
-                <input 
-                type="radio" 
-                id="WAFS-Moeilijkheidsgraad" 
-                name="WAFS-Moeilijkheidsgraad" 
-                value="8" 
-                aria-label="Radiobutton 8" 
-                required
-                aria-required="true"
-                title="moeilijkheidsgraad 8">
-            <span>8</span>
-            </label>
-            <label>
-                <input 
-                type="radio" 
-                id="WAFS-Moeilijkheidsgraad" 
-                name="WAFS-Moeilijkheidsgraad" 
-                value="9" 
-                aria-label="Radiobutton 9" 
-                required
-                aria-required="true"
-                title="moeilijkheidsgraad 9">
-            <span>9</span>
-            </label>
-            <label>
-                <input 
-                type="radio" 
-                id="WAFS-Moeilijkheidsgraad" 
-                name="WAFS-Moeilijkheidsgraad" 
-                value="10" 
-                aria-label="Radiobutton 10" 
-                required
-                aria-required="true"
-                title="moeilijkheidsgraad 10">
-            <span>10</span>
-            </label>
-
-                
-              
-        
-
-        
- 
-
-        <label> Ervaring </label><br>
-        
-            <label>
-                <input 
-                type="radio" 
-                id="WAFS-ervaring" 
-                name="WAFS-ervaring" 
-                value="1" 
-                aria-label="Radiobutton 1" 
-                required
-                aria-required="true"
-                title="ervaringsniveau 1">
-            <span>1</span>
-            </label>
-            <label>
-                <input 
-                type="radio" 
-                id="WAFS-ervaring" 
-                name="WAFS-ervaring" 
-                value="2" 
-                aria-label="Radiobutton 2" 
-                required
-                aria-required="true"
-                title="ervaringsniveau 2">
-            <span>2</span>
-            </label>
-            <label>
-                <input 
-                type="radio" 
-                id="WAFS-ervaring" 
-                name="WAFS-ervaring" 
-                value="3" 
-                aria-label="Radiobutton 3" 
-                required
-                aria-required="true"
-                title="ervaringsniveau 3">
-            <span>3</span>
-            </label>
-            <label>
-                <input 
-                type="radio" 
-                id="WAFS-ervaring" 
-                name="WAFS-ervaring" 
-                value="4" 
-                aria-label="Radiobutton 4" 
-                required
-                aria-required="true"
-                title="ervaringsniveau 4">
-            <span>4</span>
-            </label>
-            <label>
-                <input 
-                type="radio" 
-                id="WAFS-ervaring" 
-                name="WAFS-ervaring" 
-                value="5" 
-                aria-label="Radiobutton 5" 
-                required
-                aria-required="true"
-                title="ervaringsniveau 1">
-            <span>5</span>
-            </label><br>
-        
-
-        <label> Uitleg: </label><br>
-        
-            <label for="uitleg"></label>
-                <textarea id="uitleg" name="uitleg" aria-label="uitleg"></textarea>
-
-        
-    </section>
-    </fieldset>
-    
+                <h2> Docenten </h2>
+                <p>Robert & Joost</p>
 
 
-    <input type="submit" value="Versturen" aria-label="Button om de enquete te versturen">
+                <h2> Datum:</h2>
+                <p> Week 1 t/m Week 3 </p>
 
-</form>
+                <h3>1 = Niet goed & 10 = Uitstekend</h3>
 
-    <section>
-        <h2>Bedankt voor het invullen van de minor web enquete</h2>
-    </section>
 
-    
+
+                <h2> Moeilijkheid lesstof: </h2>
+
+                <div class="score">
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="1"
+                            aria-label="Radiobutton 1" required aria-required="true" title="moeilijkheidsgraad 1">
+                        <span>1</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="2"
+                            aria-label="Radiobutton 2" required aria-required="true" title="moeilijkheidsgraad 2">
+                        <span>2</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="3"
+                            aria-label="Radiobutton 3" required aria-required="true" title="moeilijkheidsgraad 3">
+                        <span>3</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="4"
+                            aria-label="Radiobutton 4" required aria-required="true" title="moeilijkheidsgraad 4">
+                        <span>4</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="5"
+                            aria-label="Radiobutton 5" required aria-required="true" title="moeilijkheidsgraad 5">
+                        <span>5</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="6"
+                            aria-label="Radiobutton 6" required aria-required="true" title="moeilijkheidsgraad 6">
+                        <span>6</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="7"
+                            aria-label="Radiobutton 7" required aria-required="true" title="moeilijkheidsgraad 7">
+                        <span>7</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="8"
+                            aria-label="Radiobutton 8" required aria-required="true" title="moeilijkheidsgraad 8">
+                        <span>8</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="9"
+                            aria-label="Radiobutton 9" required aria-required="true" title="moeilijkheidsgraad 9">
+                        <span>9</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="10"
+                            aria-label="Radiobutton 10" required aria-required="true" title="moeilijkheidsgraad 10">
+                        <span>10</span>
+                    </label>
+                </div>
+
+                <h2> Hoe heb je de uitleg ervaren:</h2>
+
+                <div class="score">
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="1" aria-label="Radiobutton 1"
+                            required aria-required="true" title="inzichtsniveau 1">
+                        <span>1</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="2" aria-label="Radiobutton 2"
+                            required aria-required="true" title="inzichtsniveau 2">
+                        <span>2</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="3" aria-label="Radiobutton 3"
+                            required aria-required="true" title="inzichtsniveau 3">
+                        <span>3</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="4" aria-label="Radiobutton 4"
+                            required aria-required="true" title="inzichtsniveau 4">
+                        <span>4</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="5" aria-label="Radiobutton 5"
+                            required aria-required="true" title="inzichtsniveau 5">
+                        <span>5</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="6" aria-label="Radiobutton 6"
+                            required aria-required="true" title="inzichtsniveau 6">
+                        <span>6</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="7" aria-label="Radiobutton 7"
+                            required aria-required="true" title="inzichtsniveau 7">
+                        <span>7</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="8" aria-label="Radiobutton 8"
+                            required aria-required="true" title="inzichtsniveau 8">
+                        <span>8</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="9" aria-label="Radiobutton 9"
+                            required aria-required="true" title="inzichtsniveau 9">
+                        <span>9</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="10"
+                            aria-label="Radiobutton 10" required aria-required="true" title="inzichtsniveau 10">
+                        <span>10</span>
+                    </label>
+                </div>
+
+                <h2> Hoe goed snapte je het:</h2>
+                <div class="score">
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="1" aria-label="Radiobutton 1"
+                            required aria-required="true" title="ervaringsniveau 1">
+                        <span>1</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="2" aria-label="Radiobutton 2"
+                            required aria-required="true" title="ervaringsniveau 2">
+                        <span>2</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="3" aria-label="Radiobutton 3"
+                            required aria-required="true" title="ervaringsniveau 3">
+                        <span>3</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="4" aria-label="Radiobutton 4"
+                            required aria-required="true" title="ervaringsniveau 4">
+                        <span>4</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="5" aria-label="Radiobutton 5"
+                            required aria-required="true" title="ervaringsniveau 5">
+                        <span>5</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="6" aria-label="Radiobutton 6"
+                            required aria-required="true" title="ervaringsniveau 6">
+                        <span>6</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="7" aria-label="Radiobutton 7"
+                            required aria-required="true" title="ervaringsniveau 7">
+                        <span>7</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="8" aria-label="Radiobutton 8"
+                            required aria-required="true" title="ervaringsniveau 8">
+                        <span>8</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="9" aria-label="Radiobutton 9"
+                            required aria-required="true" title="ervaringsniveau 9">
+                        <span>9</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="10" aria-label="Radiobutton 10"
+                            required aria-required="true" title="ervaringsniveau 10">
+                        <span>10</span>
+                    </label>
+                </div>
+                <div>
+                    <h2> Extra mening: </h2>
+
+                    <label for="uitleg"></label>
+                    <textarea id="uitleg" name="uitleg" aria-label="uitleg" resize="none"
+                        title="Extra mening typen"></textarea>
+                </div>
+            </section>
+        </fieldset>
+
+        <!-- CSS to the Rescue-->
+        <fieldset>
+            <section>
+                <legend> CSS to the Rescue </legend>
+
+                <h2> Docenten </h2>
+                <p>Sanne & Vasilis</p>
+
+
+                <h2> Datum:</h2>
+                <p> Week 1 t/m Week 3 </p>
+
+                <h3>1 = Niet goed & 10 = Uitstekend</h3>
+
+
+                <h2> Moeilijkheid lesstof: </h2>
+
+                <div class="score">
+                    <label>
+                        <input type="radio" id="CSS-Moeilijkheidsgraad" name="CSS-Moeilijkheidsgraad" value="1"
+                            aria-label="Radiobutton 1" required aria-required="true" title="moeilijkheidsgraad 1">
+                        <span>1</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="2"
+                            aria-label="Radiobutton 2" required aria-required="true" title="moeilijkheidsgraad 2">
+                        <span>2</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="3"
+                            aria-label="Radiobutton 3" required aria-required="true" title="moeilijkheidsgraad 3">
+                        <span>3</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="4"
+                            aria-label="Radiobutton 4" required aria-required="true" title="moeilijkheidsgraad 4">
+                        <span>4</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="5"
+                            aria-label="Radiobutton 5" required aria-required="true" title="moeilijkheidsgraad 5">
+                        <span>5</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="6"
+                            aria-label="Radiobutton 6" required aria-required="true" title="moeilijkheidsgraad 6">
+                        <span>6</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="7"
+                            aria-label="Radiobutton 7" required aria-required="true" title="moeilijkheidsgraad 7">
+                        <span>7</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="8"
+                            aria-label="Radiobutton 8" required aria-required="true" title="moeilijkheidsgraad 8">
+                        <span>8</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="9"
+                            aria-label="Radiobutton 9" required aria-required="true" title="moeilijkheidsgraad 9">
+                        <span>9</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="10"
+                            aria-label="Radiobutton 10" required aria-required="true" title="moeilijkheidsgraad 10">
+                        <span>10</span>
+                    </label>
+                </div>
+
+                <h2> Hoe heb je de uitleg ervaren:</h2>
+
+                <div class="score">
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="1" aria-label="Radiobutton 1"
+                            required aria-required="true" title="inzichtsniveau 1">
+                        <span>1</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="2" aria-label="Radiobutton 2"
+                            required aria-required="true" title="inzichtsniveau 2">
+                        <span>2</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="3" aria-label="Radiobutton 3"
+                            required aria-required="true" title="inzichtsniveau 3">
+                        <span>3</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="4" aria-label="Radiobutton 4"
+                            required aria-required="true" title="inzichtsniveau 4">
+                        <span>4</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="5" aria-label="Radiobutton 5"
+                            required aria-required="true" title="inzichtsniveau 5">
+                        <span>5</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="6" aria-label="Radiobutton 6"
+                            required aria-required="true" title="inzichtsniveau 6">
+                        <span>6</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="7" aria-label="Radiobutton 7"
+                            required aria-required="true" title="inzichtsniveau 7">
+                        <span>7</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="8" aria-label="Radiobutton 8"
+                            required aria-required="true" title="inzichtsniveau 8">
+                        <span>8</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="9" aria-label="Radiobutton 9"
+                            required aria-required="true" title="inzichtsniveau 9">
+                        <span>9</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="10"
+                            aria-label="Radiobutton 10" required aria-required="true" title="inzichtsniveau 10">
+                        <span>10</span>
+                    </label>
+                </div>
+
+                <h2> Hoe goed snapte je het:</h2>
+                <div class="score">
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="1" aria-label="Radiobutton 1"
+                            required aria-required="true" title="ervaringsniveau 1">
+                        <span>1</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="2" aria-label="Radiobutton 2"
+                            required aria-required="true" title="ervaringsniveau 2">
+                        <span>2</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="3" aria-label="Radiobutton 3"
+                            required aria-required="true" title="ervaringsniveau 3">
+                        <span>3</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="4" aria-label="Radiobutton 4"
+                            required aria-required="true" title="ervaringsniveau 4">
+                        <span>4</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="5" aria-label="Radiobutton 5"
+                            required aria-required="true" title="ervaringsniveau 5">
+                        <span>5</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="6" aria-label="Radiobutton 6"
+                            required aria-required="true" title="ervaringsniveau 6">
+                        <span>6</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="7" aria-label="Radiobutton 7"
+                            required aria-required="true" title="ervaringsniveau 7">
+                        <span>7</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="8" aria-label="Radiobutton 8"
+                            required aria-required="true" title="ervaringsniveau 8">
+                        <span>8</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="9" aria-label="Radiobutton 9"
+                            required aria-required="true" title="ervaringsniveau 9">
+                        <span>9</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="10" aria-label="Radiobutton 10"
+                            required aria-required="true" title="ervaringsniveau 10">
+                        <span>10</span>
+                    </label>
+                </div>
+                <div>
+                    <h2> Extra mening: </h2>
+
+                    <label for="uitleg"></label>
+                    <textarea id="uitleg" name="uitleg" aria-label="uitleg" resize="none"
+                        title="Extra mening typen"></textarea>
+                </div>
+            </section>
+        </fieldset>
+
+        <!-- Progressive Web Apps-->
+        <fieldset>
+            <section>
+                <legend> Progressive Web Apps </legend>
+
+                <h2> Docenten </h2>
+                <p>Janno & Declan</p>
+
+
+                <h2> Datum:</h2>
+                <p> Week 5 t/m Week 8 </p>
+
+                <h3>1 = Niet goed & 10 = Uitstekend</h3>
+
+
+
+                <h2> Moeilijkheid lesstof: </h2>
+
+                <div class="score">
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="1"
+                            aria-label="Radiobutton 1" required aria-required="true" title="moeilijkheidsgraad 1">
+                        <span>1</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="2"
+                            aria-label="Radiobutton 2" required aria-required="true" title="moeilijkheidsgraad 2">
+                        <span>2</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="3"
+                            aria-label="Radiobutton 3" required aria-required="true" title="moeilijkheidsgraad 3">
+                        <span>3</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="4"
+                            aria-label="Radiobutton 4" required aria-required="true" title="moeilijkheidsgraad 4">
+                        <span>4</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="5"
+                            aria-label="Radiobutton 5" required aria-required="true" title="moeilijkheidsgraad 5">
+                        <span>5</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="6"
+                            aria-label="Radiobutton 6" required aria-required="true" title="moeilijkheidsgraad 6">
+                        <span>6</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="7"
+                            aria-label="Radiobutton 7" required aria-required="true" title="moeilijkheidsgraad 7">
+                        <span>7</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="8"
+                            aria-label="Radiobutton 8" required aria-required="true" title="moeilijkheidsgraad 8">
+                        <span>8</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="9"
+                            aria-label="Radiobutton 9" required aria-required="true" title="moeilijkheidsgraad 9">
+                        <span>9</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="10"
+                            aria-label="Radiobutton 10" required aria-required="true" title="moeilijkheidsgraad 10">
+                        <span>10</span>
+                    </label>
+                </div>
+
+                <h2> Hoe heb je de uitleg ervaren:</h2>
+
+                <div class="score">
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="1" aria-label="Radiobutton 1"
+                            required aria-required="true" title="inzichtsniveau 1">
+                        <span>1</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="2" aria-label="Radiobutton 2"
+                            required aria-required="true" title="inzichtsniveau 2">
+                        <span>2</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="3" aria-label="Radiobutton 3"
+                            required aria-required="true" title="inzichtsniveau 3">
+                        <span>3</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="4" aria-label="Radiobutton 4"
+                            required aria-required="true" title="inzichtsniveau 4">
+                        <span>4</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="5" aria-label="Radiobutton 5"
+                            required aria-required="true" title="inzichtsniveau 5">
+                        <span>5</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="6" aria-label="Radiobutton 6"
+                            required aria-required="true" title="inzichtsniveau 6">
+                        <span>6</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="7" aria-label="Radiobutton 7"
+                            required aria-required="true" title="inzichtsniveau 7">
+                        <span>7</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="8" aria-label="Radiobutton 8"
+                            required aria-required="true" title="inzichtsniveau 8">
+                        <span>8</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="9" aria-label="Radiobutton 9"
+                            required aria-required="true" title="inzichtsniveau 9">
+                        <span>9</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="10"
+                            aria-label="Radiobutton 10" required aria-required="true" title="inzichtsniveau 10">
+                        <span>10</span>
+                    </label>
+                </div>
+
+                <h2> Hoe goed snapte je het:</h2>
+                <div class="score">
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="1" aria-label="Radiobutton 1"
+                            required aria-required="true" title="ervaringsniveau 1">
+                        <span>1</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="2" aria-label="Radiobutton 2"
+                            required aria-required="true" title="ervaringsniveau 2">
+                        <span>2</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="3" aria-label="Radiobutton 3"
+                            required aria-required="true" title="ervaringsniveau 3">
+                        <span>3</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="4" aria-label="Radiobutton 4"
+                            required aria-required="true" title="ervaringsniveau 4">
+                        <span>4</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="5" aria-label="Radiobutton 5"
+                            required aria-required="true" title="ervaringsniveau 5">
+                        <span>5</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="6" aria-label="Radiobutton 6"
+                            required aria-required="true" title="ervaringsniveau 6">
+                        <span>6</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="7" aria-label="Radiobutton 7"
+                            required aria-required="true" title="ervaringsniveau 7">
+                        <span>7</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="8" aria-label="Radiobutton 8"
+                            required aria-required="true" title="ervaringsniveau 8">
+                        <span>8</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="9" aria-label="Radiobutton 9"
+                            required aria-required="true" title="ervaringsniveau 9">
+                        <span>9</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="10" aria-label="Radiobutton 10"
+                            required aria-required="true" title="ervaringsniveau 10">
+                        <span>10</span>
+                    </label>
+                </div>
+                <div>
+                    <h2> Extra mening: </h2>
+
+                    <label for="uitleg"></label>
+                    <textarea id="uitleg" name="uitleg" aria-label="uitleg" resize="none"
+                        title="Extra mening typen"></textarea>
+                </div>
+            </section>
+        </fieldset>
+
+        <!-- Browser Technologies-->
+        <fieldset>
+            <section>
+                <legend> Browser Technologies </legend>
+
+                <h2> Docenten </h2>
+                <p>Vasilis & Peter Paul</p>
+
+
+                <h2> Datum:</h2>
+                <p> Week 5 t/m Week 8 </p>
+
+
+                <h3>1 = Niet goed & 10 = Uitstekend</h3>
+
+
+                <h2> Moeilijkheid lesstof: </h2>
+
+                <div class="score">
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="1"
+                            aria-label="Radiobutton 1" required aria-required="true" title="moeilijkheidsgraad 1">
+                        <span>1</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="2"
+                            aria-label="Radiobutton 2" required aria-required="true" title="moeilijkheidsgraad 2">
+                        <span>2</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="3"
+                            aria-label="Radiobutton 3" required aria-required="true" title="moeilijkheidsgraad 3">
+                        <span>3</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="4"
+                            aria-label="Radiobutton 4" required aria-required="true" title="moeilijkheidsgraad 4">
+                        <span>4</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="5"
+                            aria-label="Radiobutton 5" required aria-required="true" title="moeilijkheidsgraad 5">
+                        <span>5</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="6"
+                            aria-label="Radiobutton 6" required aria-required="true" title="moeilijkheidsgraad 6">
+                        <span>6</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="7"
+                            aria-label="Radiobutton 7" required aria-required="true" title="moeilijkheidsgraad 7">
+                        <span>7</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="8"
+                            aria-label="Radiobutton 8" required aria-required="true" title="moeilijkheidsgraad 8">
+                        <span>8</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="9"
+                            aria-label="Radiobutton 9" required aria-required="true" title="moeilijkheidsgraad 9">
+                        <span>9</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="10"
+                            aria-label="Radiobutton 10" required aria-required="true" title="moeilijkheidsgraad 10">
+                        <span>10</span>
+                    </label>
+                </div>
+
+                <h2> Hoe heb je de uitleg ervaren:</h2>
+
+                <div class="score">
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="1" aria-label="Radiobutton 1"
+                            required aria-required="true" title="inzichtsniveau 1">
+                        <span>1</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="2" aria-label="Radiobutton 2"
+                            required aria-required="true" title="inzichtsniveau 2">
+                        <span>2</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="3" aria-label="Radiobutton 3"
+                            required aria-required="true" title="inzichtsniveau 3">
+                        <span>3</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="4" aria-label="Radiobutton 4"
+                            required aria-required="true" title="inzichtsniveau 4">
+                        <span>4</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="5" aria-label="Radiobutton 5"
+                            required aria-required="true" title="inzichtsniveau 5">
+                        <span>5</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="6" aria-label="Radiobutton 6"
+                            required aria-required="true" title="inzichtsniveau 6">
+                        <span>6</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="7" aria-label="Radiobutton 7"
+                            required aria-required="true" title="inzichtsniveau 7">
+                        <span>7</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="8" aria-label="Radiobutton 8"
+                            required aria-required="true" title="inzichtsniveau 8">
+                        <span>8</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="9" aria-label="Radiobutton 9"
+                            required aria-required="true" title="inzichtsniveau 9">
+                        <span>9</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="10"
+                            aria-label="Radiobutton 10" required aria-required="true" title="inzichtsniveau 10">
+                        <span>10</span>
+                    </label>
+                </div>
+
+                <h2> Hoe goed snapte je het:</h2>
+                <div class="score">
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="1" aria-label="Radiobutton 1"
+                            required aria-required="true" title="ervaringsniveau 1">
+                        <span>1</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="2" aria-label="Radiobutton 2"
+                            required aria-required="true" title="ervaringsniveau 2">
+                        <span>2</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="3" aria-label="Radiobutton 3"
+                            required aria-required="true" title="ervaringsniveau 3">
+                        <span>3</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="4" aria-label="Radiobutton 4"
+                            required aria-required="true" title="ervaringsniveau 4">
+                        <span>4</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="5" aria-label="Radiobutton 5"
+                            required aria-required="true" title="ervaringsniveau 5">
+                        <span>5</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="6" aria-label="Radiobutton 6"
+                            required aria-required="true" title="ervaringsniveau 6">
+                        <span>6</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="7" aria-label="Radiobutton 7"
+                            required aria-required="true" title="ervaringsniveau 7">
+                        <span>7</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="8" aria-label="Radiobutton 8"
+                            required aria-required="true" title="ervaringsniveau 8">
+                        <span>8</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="9" aria-label="Radiobutton 9"
+                            required aria-required="true" title="ervaringsniveau 9">
+                        <span>9</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="10" aria-label="Radiobutton 10"
+                            required aria-required="true" title="ervaringsniveau 10">
+                        <span>10</span>
+                    </label>
+                </div>
+                <div>
+                    <h2> Extra mening: </h2>
+
+                    <label for="uitleg"></label>
+                    <textarea id="uitleg" name="uitleg" aria-label="uitleg" resize="none"
+                        title="Extra mening typen"></textarea>
+                </div>
+            </section>
+        </fieldset>
+
+        <!-- Real-Time Web-->
+        <fieldset>
+            <section>
+                <legend> Real-Time Web </legend>
+
+                <h2> Docenten </h2>
+                <p>Joost & Koop</p>
+
+
+                <h2> Datum:</h2>
+                <p> Week 10 t/m Week 13 </p>
+
+
+                <h3>1 = Niet goed & 10 = Uitstekend</h3>
+
+
+                <h2> Moeilijkheid lesstof: </h2>
+
+                <div class="score">
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="1"
+                            aria-label="Radiobutton 1" required aria-required="true" title="moeilijkheidsgraad 1">
+                        <span>1</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="2"
+                            aria-label="Radiobutton 2" required aria-required="true" title="moeilijkheidsgraad 2">
+                        <span>2</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="3"
+                            aria-label="Radiobutton 3" required aria-required="true" title="moeilijkheidsgraad 3">
+                        <span>3</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="4"
+                            aria-label="Radiobutton 4" required aria-required="true" title="moeilijkheidsgraad 4">
+                        <span>4</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="5"
+                            aria-label="Radiobutton 5" required aria-required="true" title="moeilijkheidsgraad 5">
+                        <span>5</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="6"
+                            aria-label="Radiobutton 6" required aria-required="true" title="moeilijkheidsgraad 6">
+                        <span>6</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="7"
+                            aria-label="Radiobutton 7" required aria-required="true" title="moeilijkheidsgraad 7">
+                        <span>7</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="8"
+                            aria-label="Radiobutton 8" required aria-required="true" title="moeilijkheidsgraad 8">
+                        <span>8</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="9"
+                            aria-label="Radiobutton 9" required aria-required="true" title="moeilijkheidsgraad 9">
+                        <span>9</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="10"
+                            aria-label="Radiobutton 10" required aria-required="true" title="moeilijkheidsgraad 10">
+                        <span>10</span>
+                    </label>
+                </div>
+
+                <h2> Hoe heb je de uitleg ervaren:</h2>
+
+                <div class="score">
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="1" aria-label="Radiobutton 1"
+                            required aria-required="true" title="inzichtsniveau 1">
+                        <span>1</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="2" aria-label="Radiobutton 2"
+                            required aria-required="true" title="inzichtsniveau 2">
+                        <span>2</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="3" aria-label="Radiobutton 3"
+                            required aria-required="true" title="inzichtsniveau 3">
+                        <span>3</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="4" aria-label="Radiobutton 4"
+                            required aria-required="true" title="inzichtsniveau 4">
+                        <span>4</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="5" aria-label="Radiobutton 5"
+                            required aria-required="true" title="inzichtsniveau 5">
+                        <span>5</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="6" aria-label="Radiobutton 6"
+                            required aria-required="true" title="inzichtsniveau 6">
+                        <span>6</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="7" aria-label="Radiobutton 7"
+                            required aria-required="true" title="inzichtsniveau 7">
+                        <span>7</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="8" aria-label="Radiobutton 8"
+                            required aria-required="true" title="inzichtsniveau 8">
+                        <span>8</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="9" aria-label="Radiobutton 9"
+                            required aria-required="true" title="inzichtsniveau 9">
+                        <span>9</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="10"
+                            aria-label="Radiobutton 10" required aria-required="true" title="inzichtsniveau 10">
+                        <span>10</span>
+                    </label>
+                </div>
+
+                <h2> Hoe goed snapte je het:</h2>
+                <div class="score">
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="1" aria-label="Radiobutton 1"
+                            required aria-required="true" title="ervaringsniveau 1">
+                        <span>1</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="2" aria-label="Radiobutton 2"
+                            required aria-required="true" title="ervaringsniveau 2">
+                        <span>2</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="3" aria-label="Radiobutton 3"
+                            required aria-required="true" title="ervaringsniveau 3">
+                        <span>3</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="4" aria-label="Radiobutton 4"
+                            required aria-required="true" title="ervaringsniveau 4">
+                        <span>4</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="5" aria-label="Radiobutton 5"
+                            required aria-required="true" title="ervaringsniveau 5">
+                        <span>5</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="6" aria-label="Radiobutton 6"
+                            required aria-required="true" title="ervaringsniveau 6">
+                        <span>6</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="7" aria-label="Radiobutton 7"
+                            required aria-required="true" title="ervaringsniveau 7">
+                        <span>7</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="8" aria-label="Radiobutton 8"
+                            required aria-required="true" title="ervaringsniveau 8">
+                        <span>8</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="9" aria-label="Radiobutton 9"
+                            required aria-required="true" title="ervaringsniveau 9">
+                        <span>9</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="10" aria-label="Radiobutton 10"
+                            required aria-required="true" title="ervaringsniveau 10">
+                        <span>10</span>
+                    </label>
+                </div>
+                <div>
+                    <h2> Extra mening: </h2>
+
+                    <label for="uitleg"></label>
+                    <textarea id="uitleg" name="uitleg" aria-label="uitleg" resize="none"
+                        title="Extra mening typen"></textarea>
+                </div>
+            </section>
+        </fieldset>
+
+        <!-- Human-Centered Design -->
+        <fieldset>
+            <section>
+                <legend> Human Centered Design </legend>
+
+                <h2> Docenten </h2>
+                <p>Koop & Vasilis</p>
+
+
+                <h2> Datum:</h2>
+                <p> Week 10 t/m Week 13 </p>
+
+
+                <h3>1 = Niet goed & 10 = Uitstekend</h3>
+
+
+                <h2> Moeilijkheid lesstof: </h2>
+
+                <div class="score">
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="1"
+                            aria-label="Radiobutton 1" required aria-required="true" title="moeilijkheidsgraad 1">
+                        <span>1</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="2"
+                            aria-label="Radiobutton 2" required aria-required="true" title="moeilijkheidsgraad 2">
+                        <span>2</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="3"
+                            aria-label="Radiobutton 3" required aria-required="true" title="moeilijkheidsgraad 3">
+                        <span>3</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="4"
+                            aria-label="Radiobutton 4" required aria-required="true" title="moeilijkheidsgraad 4">
+                        <span>4</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="5"
+                            aria-label="Radiobutton 5" required aria-required="true" title="moeilijkheidsgraad 5">
+                        <span>5</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="6"
+                            aria-label="Radiobutton 6" required aria-required="true" title="moeilijkheidsgraad 6">
+                        <span>6</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="7"
+                            aria-label="Radiobutton 7" required aria-required="true" title="moeilijkheidsgraad 7">
+                        <span>7</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="8"
+                            aria-label="Radiobutton 8" required aria-required="true" title="moeilijkheidsgraad 8">
+                        <span>8</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="9"
+                            aria-label="Radiobutton 9" required aria-required="true" title="moeilijkheidsgraad 9">
+                        <span>9</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-Moeilijkheidsgraad" name="WAFS-Moeilijkheidsgraad" value="10"
+                            aria-label="Radiobutton 10" required aria-required="true" title="moeilijkheidsgraad 10">
+                        <span>10</span>
+                    </label>
+                </div>
+
+                <h2> Hoe heb je de uitleg ervaren:</h2>
+
+                <div class="score">
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="1" aria-label="Radiobutton 1"
+                            required aria-required="true" title="inzichtsniveau 1">
+                        <span>1</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="2" aria-label="Radiobutton 2"
+                            required aria-required="true" title="inzichtsniveau 2">
+                        <span>2</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="3" aria-label="Radiobutton 3"
+                            required aria-required="true" title="inzichtsniveau 3">
+                        <span>3</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="4" aria-label="Radiobutton 4"
+                            required aria-required="true" title="inzichtsniveau 4">
+                        <span>4</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="5" aria-label="Radiobutton 5"
+                            required aria-required="true" title="inzichtsniveau 5">
+                        <span>5</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="6" aria-label="Radiobutton 6"
+                            required aria-required="true" title="inzichtsniveau 6">
+                        <span>6</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="7" aria-label="Radiobutton 7"
+                            required aria-required="true" title="inzichtsniveau 7">
+                        <span>7</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="8" aria-label="Radiobutton 8"
+                            required aria-required="true" title="inzichtsniveau 8">
+                        <span>8</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="9" aria-label="Radiobutton 9"
+                            required aria-required="true" title="inzichtsniveau 9">
+                        <span>9</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-ervaring" name="WAFS-ervaring" value="10"
+                            aria-label="Radiobutton 10" required aria-required="true" title="inzichtsniveau 10">
+                        <span>10</span>
+                    </label>
+                </div>
+
+                <h2> Hoe goed snapte je het:</h2>
+                <div class="score">
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="1" aria-label="Radiobutton 1"
+                            required aria-required="true" title="ervaringsniveau 1">
+                        <span>1</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="2" aria-label="Radiobutton 2"
+                            required aria-required="true" title="ervaringsniveau 2">
+                        <span>2</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="3" aria-label="Radiobutton 3"
+                            required aria-required="true" title="ervaringsniveau 3">
+                        <span>3</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="4" aria-label="Radiobutton 4"
+                            required aria-required="true" title="ervaringsniveau 4">
+                        <span>4</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="5" aria-label="Radiobutton 5"
+                            required aria-required="true" title="ervaringsniveau 5">
+                        <span>5</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="6" aria-label="Radiobutton 6"
+                            required aria-required="true" title="ervaringsniveau 6">
+                        <span>6</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="7" aria-label="Radiobutton 7"
+                            required aria-required="true" title="ervaringsniveau 7">
+                        <span>7</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="8" aria-label="Radiobutton 8"
+                            required aria-required="true" title="ervaringsniveau 8">
+                        <span>8</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="9" aria-label="Radiobutton 9"
+                            required aria-required="true" title="ervaringsniveau 9">
+                        <span>9</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="WAFS-inzicht" name="WAFS-inzicht" value="10" aria-label="Radiobutton 10"
+                            required aria-required="true" title="ervaringsniveau 10">
+                        <span>10</span>
+                    </label>
+                </div>
+                <div>
+                    <h2> Extra mening: </h2>
+
+                    <label for="uitleg"></label>
+                    <textarea id="uitleg" name="uitleg" aria-label="uitleg" resize="none"
+                        title="Extra mening typen"></textarea>
+                </div>
+                <input type="submit" value="Versturen" aria-label="Button om de enquete te versturen">
+
+            </section>
+        </fieldset>
+
+
+
+
+
+
+    </form>
+
+
+
 
     <script src="/js/script.js"></script>
 </body>
