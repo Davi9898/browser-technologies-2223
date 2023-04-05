@@ -17,7 +17,8 @@ Desktop
 * Google Chrome
 * Firefox
 * Edge
-* UC browser
+* UC browser 
+<br>
 Mobile
 IOS:
 * Safari
