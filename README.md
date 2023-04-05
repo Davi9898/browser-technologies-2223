@@ -1,20 +1,33 @@
 # Enquête Minor web design 
 
-## Inleiding
+# Table of contents
+1. [Inleiding](#introduction)
+2. [Enhanced layer](#paragraph1)
+3. [Usable layer](#paragraph2)
+4. [Functional layer](#paragraph3)
+5. [Flow schema](#paragraph4)
+6. [Feature detection en PE](#paragraph5)
+7. [Testverslag](#paragraph6)
+8. [Conclusie](#pargraph7)
+9. [Bronnen](#pargraph8)
+
+## Inleiding <a name="introduction"></a>
 Voor het vak Browsertechnologies ben ik aan de slag gegaan om een enquête te maken waar studenten een eindbeoordeling kunnen geven aan de minor. Dit hebben we moeten doen met Progressive Enhancement en feature detection.
-### Enhanced layer
+### Enhanced layer <a name="paragraph1"></a>
 ![Headerimg](https://user-images.githubusercontent.com/76910947/230207526-948bc258-4d88-4d42-8072-9d8701835038.png)
-### Usable layer
+### Usable layer <a name="paragraph2"></a>
 ![usablelayer](https://user-images.githubusercontent.com/76910947/230208130-39f0667a-cd99-4ae5-b90e-5ddd85787c56.png)
-### Functional layer
+### Functional layer <a name="paragraph3"></a>
 ![functionallayer](https://user-images.githubusercontent.com/76910947/230208322-a676bb26-73a1-4fa4-9494-4bd970b7a2cf.png)
-### Flow schema
+### Flow schema <a name="paragraph4"></a>
 ![Frame 1 (14)](https://user-images.githubusercontent.com/76910947/230213271-f0b59808-c572-42aa-9956-2f997412a522.png)
 
-## Feature detection en progressive Enhancement
-Zoals je kan zien is deze website opgebouwd met de design benadering van progressive Enhancement. Dermate komen er meer features te voorschijn maar de enquête blijft altijd te gebruiken. In elke layer is deze dus te gebruiken. Ook is er feature detection toe gepast met dank aan de @support en door een fallback font toe te passen. V
+## Feature detection en Progressive Enhancement <a name="paragraph5"></a>
+Zoals je kan zien is deze website opgebouwd met de design benadering van progressive Enhancement. Dermate komen er meer features te voorschijn maar de enquête blijft altijd te gebruiken. In elke layer is deze dus te gebruiken. Ook is er feature detection toe gepast met dank aan de @support en door een fallback font toe te passen. 
 
-# Testverslag
+Feature detection is een techniek die wordt gebruikt in web development om te bepalen of een bepaalde functie of eigenschap beschikbaar is in de browser van de gebruiker. Dit is belangrijk omdat niet alle browsers alle functies ondersteunen, en het is daarom belangrijk om te weten of een bepaalde functie beschikbaar is voordat je die functie probeert te gebruiken.
+
+# Testverslag <a name="paragraph6"></a>
 
 ## Link naar demo
 
@@ -101,5 +114,7 @@ Iets wat meteen opvalt is dat hier geen local storage aanwezig is. Ook is de pro
 * progress bar ❌
 * localstorage ❌
 
-## Conclusie
+## Conclusie <a name="paragraph7"></a>
 Mijn enquête werkt goed op alle browsers behalve als je deze in een obscure text browser gaat bezoeken. Zelfs dan kun je nog gewoon de enquête doorlopen en het formulier submitten. Echter werken alle andere leuke features niet meer. Houdt het dus gewoon bij een Chrome of een Firefox.
+
+## Sources <a name="paragraph8"></a>
