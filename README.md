@@ -13,6 +13,7 @@ Voor het vak Browsertechnologies ben ik aan de slag gegaan om een enquête te ma
 
 
 
+# Testverslag
 
 ## Link naar demo
 
@@ -32,9 +33,11 @@ Desktop
 * Edge
 * UC browser 
 <br>
-Mobile
+**Mobile**
 IOS:
+
 * Safari
+* 
 Android:
 * Chrome
 
