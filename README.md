@@ -39,8 +39,12 @@ IOS:
 * Safari
 
 Android:
-* Chrome
+* Samsung Internet
 
+## Google Chrome
+Ik ben als allereerst gaan testen op Google Chrome om te kijken hoe mijn applicatie werkt. Ik heb mijn applicatie gebouwd in Google Chrome. Alles werkt dus er valt niet veel te testen hier.
+
+## Firefox
 
 
 
