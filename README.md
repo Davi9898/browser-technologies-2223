@@ -20,11 +20,17 @@ Zoals je kan zien is deze website opgebouwd met de design benadering van progres
 
 ## Features
 * Light en dark mode
+  * Ik heb gekozen om een prefer color-scheme toe te passen zodat de gebruiker altijd zijn gewenste Light/dark mode krijgt.
 * Progress bar
+  * Gekozen om met JS te kijken naar de active fieldset zodat we de progress bar kunnen updaten. Hierdoor weet onze gebruiker waar zij is in het proces.
 * Js validation
+  * Gekozen om met HTML CSS en JS validation beschikbaar te maken. Dit vergoot de gebruikerservaring van de gebruiker en zorgt er voor dat er geen fouten gemaakt worden.
 * HTML validation
+  * Zorgt er voor dat er geen fouten gemaakt kunnen worden.
 * button om terug en naar voren te gaan.
+  * Vergoot de gebruikerservaring van de gebruiker door een prettige layout aan te bieden en niet te veel informatie weer te geven.
 * Input wordt opgeslagen in LocalStorage
+  * Gebruiker kan later verder als dat nodig is, ook wanneer de browser perongeluk gesloten wordt.
 
 
 ## Lijst met browsers waarin ik heb getest
