@@ -40,16 +40,7 @@
     }
   }
 
-
-body {
-    font-family: 'Roboto Slab', serif, Arial, Helvetica, sans-serif;
-    background-color: #4773aa;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    color: #ffffff;
-}
-
+  /* Checkt of browser flex-box ondersteunt */
 @supports (display:flex) {
     fieldset {
         background: #4773aa;
@@ -61,6 +52,17 @@ body {
         justify-content: center;
     }
     
+}
+
+/* containers */
+ 
+body {
+    font-family: 'Roboto Slab', serif, Arial, Helvetica, sans-serif;
+    background-color: #4773aa;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
 }
 
 section {
@@ -83,6 +85,8 @@ form {
 .fieldset-active {
     z-index: 1;
 }
+
+/* Inputs styling */
 
 fieldset:nth-of-type(1) label {
     display: block;
@@ -160,32 +164,8 @@ textarea {
     font-size: 1.3em;
 }
 
+/* Kopjes */
 
-button {
-    background-color: #ffbe0b;
-    color: black;
-    border: 0;
-    padding: 10px;
-    box-shadow: inset 0 0 3px;
-    font-weight: bold;
-    cursor: pointer;
-    width: 100px;
-}
-
-legend {
-    font-size: 1.7rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-decoration: overline;
-}
-
-header {
-    position: relative;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 h1 {
     margin-top: 2rem;
@@ -209,7 +189,35 @@ h3 {
     text-decoration: underline;
 }
 
+legend {
+    font-size: 1.7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: overline;
+}
+
+header {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 /* Button Styling */
+
+button {
+    background-color: #ffbe0b;
+    color: black;
+    border: 0;
+    padding: 10px;
+    box-shadow: inset 0 0 3px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100px;
+}
 
 .buttonfooter {
     display: flex;
@@ -332,6 +340,8 @@ header li {
         color: white;
     }
   }
+
+  /* Button Styling */
 
   fieldset:nth-of-type(7) .buttonfooter {
     position: absolute;
