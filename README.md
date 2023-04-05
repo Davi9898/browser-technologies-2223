@@ -84,7 +84,8 @@ Op Samsung internet kreeg ik ook last van de spacing maar verder werkte de websi
 
 ## Obscure browser Lynx
 Ik heb gekozen om de terminal browser Lynx te testen voor mijn website om te kijken of de functionaliteiten nog werken.
-![lynx](https://user-images.githubusercontent.com/76910947/230225168-74c51f28-0161-4b5b-ab24-d66540ffc111.png)
+![lynxfrontpage](https://user-images.githubusercontent.com/76910947/230227027-a3d43d53-a51a-465c-ae8c-8674c7c1f4cc.png)
+
 Zoals je kan zien kan je hier kun je makkelijk door de website heen tabben en door middel van enter gebruik maken van de radio buttons
 ![lynxtest](https://user-images.githubusercontent.com/76910947/230225597-df044f7e-5340-4f62-9a1a-89aa666a638f.png)
 Iets wat meteen opvalt is dat hier geen local storage aanwezig is. Ook is de progress bar nergens te bekennen en is er geen enkele form van validation. Wel geeft de terminal aan dat wanneer je teruggaat dat alle form data gewist wordt. Maar ik ga er van uit dat dit hardcoded is.
