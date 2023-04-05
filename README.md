@@ -31,7 +31,7 @@ Desktop
 * Google Chrome
 * Firefox
 * Edge
-* UC browser 
+* Lynx
 <br>
 Mobile<br>
 IOS:
@@ -43,8 +43,55 @@ Android:
 
 ## Google Chrome
 Ik ben als allereerst gaan testen op Google Chrome om te kijken hoe mijn applicatie werkt. Ik heb mijn applicatie gebouwd in Google Chrome. Alles werkt dus er valt niet veel te testen hier.
+* Validation ✔️
+* enquete submitten ✔️
+* progress bar ✔️
+* localstorage ✔️
 
 ## Firefox
+Op de Firefox browser ben ik gaan testen of mijn app werkt en gelukkig doet hij dat. Geen enkele functie gaat fout en de hele enquête werkt. Zelfs localstorage werkt, ik had verwacht dat dit niet zou werken. Ook wanneer ik JavaScript uitzet is de usable layer nog goed te gebruiken.
+* Validation ✔️
+* enquete submitten ✔️
+* progress bar ✔️
+* localstorage ✔️
+![fire_fox_test_goede](https://user-images.githubusercontent.com/76910947/230218774-a739fb24-302f-482b-9a94-094c49674adf.png)
 
+## Edge
+Ook in Microsoft Edge werkt de enquête zonder enige problemen. Ook wanneer je JavaScript uitzet in de Microsoft Edge browser werkt de enquête nog zoals hij hoort te werken.
+* Validation ✔️
+* enquete submitten ✔️
+* progress bar ✔️
+![edge_browser](https://user-images.githubusercontent.com/76910947/230223231-194fc9b3-09ae-45e1-97b6-73d8a7d7d107.png)
 
+### Mobile
 
+## Safari
+Op Safari is de spacing van mijn flexbox allemaal net een beetje lelijk geworden. Voor de rest kun je de app wel gewoon bedienen. Ook werkt de form validatie zoals hij zou te horen. Ook werkt de localstorage gewoon zoals hij zou moeten doen. Ook doet de height van mn fieldset een beetje vreemd. 
+Features: 
+* Validation ✔️
+* enquete submitten ✔️
+* progress bar ✔️
+* localstorage ✔️
+![safarigoede](https://user-images.githubusercontent.com/76910947/230223794-c74f3d8b-ae5d-44c3-a8d6-4e7c7e63e6c6.jpg)
+
+## Samsung Internet
+Op Samsung internet kreeg ik ook last van de spacing maar verder werkte de website wel tot behoren
+* Validation ✔️
+* enquete submitten ✔️
+* progress bar ✔️
+* localstorage ✔️
+![safari](https://user-images.githubusercontent.com/76910947/230223469-ec162788-333e-4137-900f-6564fa5d99b0.jpg)
+
+## Obscure browser Lynx
+Ik heb gekozen om de terminal browser Lynx te testen voor mijn website om te kijken of de functionaliteiten nog werken.
+![lynx](https://user-images.githubusercontent.com/76910947/230225168-74c51f28-0161-4b5b-ab24-d66540ffc111.png)
+Zoals je kan zien kan je hier kun je makkelijk door de website heen tabben en door middel van enter gebruik maken van de radio buttons
+![lynxtest](https://user-images.githubusercontent.com/76910947/230225597-df044f7e-5340-4f62-9a1a-89aa666a638f.png)
+Iets wat meteen opvalt is dat hier geen local storage aanwezig is. Ook is de progress bar nergens te bekennen en is er geen enkele form van validation. Wel geeft de terminal aan dat wanneer je teruggaat dat alle form data gewist wordt. Maar ik ga er van uit dat dit hardcoded is.
+* Validation ❌
+* enquete submitten ✔️
+* progress bar ❌
+* localstorage ❌
+
+## Conclusie
+Mijn enquête werkt goed op alle browsers behalve als je deze in een obscure text browser gaat bezoeken. Zelfs dan kun je nog gewoon de enquête doorlopen en het formulier submitten. Echter werken alle andere leuke features niet meer. Houdt het dus gewoon bij een Chrome of een Firefox.
