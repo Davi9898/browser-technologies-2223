@@ -11,7 +11,8 @@ Voor het vak Browsertechnologies ben ik aan de slag gegaan om een enquête te ma
 ### Flow schema
 ![Frame 1 (14)](https://user-images.githubusercontent.com/76910947/230213271-f0b59808-c572-42aa-9956-2f997412a522.png)
 
-
+## Feature detection en progressive Enhancement
+Zoals je kan zien is deze website opgebouwd met de design benadering van progressive Enhancement. Dermate komen er meer features te voorschijn maar de enquête blijft altijd te gebruiken. In elke layer is deze dus te gebruiken. Ook is er feature detection toe gepast met dank aan de @support en door een fallback font toe te passen. V
 
 # Testverslag
 
