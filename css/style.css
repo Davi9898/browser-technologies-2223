@@ -1,368 +1,359 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Feature detection*/
 
-@supports (-webkit-appearance:none) or (-moz-appearance:none) or (appearance:none) {
-    /* Feature is supported, add styles here */
-    .score input:checked ~ span {
-      background-color: black;
-      color: white;
-    }
+@supports (-webkit-appearance: none) or (-moz-appearance: none) or
+  (appearance: none) {
+  /* Feature is supported, add styles here */
+  .score input:checked ~ span {
+    background-color: black;
+    color: white;
   }
+}
 
-@supports (-webkit-appearance:none) {
-    .score input:checked ~ span {
-      background-color: black;
-      color: white;
-    }
+@supports (-webkit-appearance: none) {
+  .score input:checked ~ span {
+    background-color: black;
+    color: white;
   }
-  
-  @supports not (-webkit-appearance:none) {
-    .score input:checked ~ span {
-      background-color: blue;
-      color: white;
-    }
-  }
-   
-  @media (pointer: fine) {
-    button {
-      font-size: 1.0em;
-    }
-  }
-  
-  @media (pointer: coarse) {
-    button {
-      font-size: 1.0em;
-    }
-  }
+}
 
-  /* Checkt of browser flex-box ondersteunt */
-@supports (display:flex) {
-    fieldset {
-        background: #4773aa;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
+@supports not (-webkit-appearance: none) {
+  .score input:checked ~ span {
+    background-color: blue;
+    color: white;
+  }
+}
+
+@media (pointer: fine) {
+  button {
+    font-size: 1em;
+  }
+}
+
+@media (pointer: coarse) {
+  button {
+    font-size: 1em;
+  }
+}
+
+/* Checkt of browser flex-box ondersteunt */
+@supports (display: flex) {
+  fieldset {
+    background: #4773aa;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* containers */
- 
+
 body {
-    font-family: 'Roboto Slab', serif, Arial, Helvetica, sans-serif;
-    background-color: #4773aa;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    color: #ffffff;
+  font-family: "Roboto Slab", serif, Arial, Helvetica, sans-serif;
+  background-color: #4773aa;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
 }
 
 section {
-    width: 400px;
-    margin-top: 5em;
+  width: 400px;
+  margin-top: 5em;
 }
 
 form {
-    max-width: 600px;
-    width:100%;
+  max-width: 600px;
+  width: 100%;
 }
 
 .floating-fieldset {
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin-top: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 0;
 }
 
 .fieldset-active {
-    z-index: 1;
+  z-index: 1;
 }
 
 /* Inputs styling */
 
 fieldset:nth-of-type(1) label {
-    display: block;
+  display: block;
 }
 
 fieldset:nth-of-type(1) input {
-    display: block;
-    width: 300px;
-    padding: 10px;
-    border-radius: 10px;
+  display: block;
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .score {
-    display: flex; 
+  display: flex;
 }
 
 .score label {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10%;
-    background-color: #fff;
-    outline: 1px black solid;
-    margin-bottom: 1em;
-    margin-top: .3em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  background-color: #fff;
+  outline: 1px black solid;
+  margin-bottom: 1em;
+  margin-top: 0.3em;
 }
 
 .score input {
-    position: absolute;
-    opacity: 0.01;
+  position: absolute;
+  opacity: 0.01;
 }
 
 .score input:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 .score label:hover {
-    background-color: #a8d1fc;
-    cursor: pointer;
+  background-color: #a8d1fc;
+  cursor: pointer;
 }
 
-
-
 .score input:focus ~ span {
-    outline:  2px solid black;
-    background-color: #a8d1fc;
-    z-index: 3;
+  outline: 2px solid black;
+  background-color: #a8d1fc;
+  z-index: 3;
 }
 
 .score span {
-    color: black;
-    font-weight: bold;
-    width: 100%;
-    height: 100%;
-    padding: .5rem;
-    text-align: center;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+  color: black;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
 .score input:checked ~ span {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 textarea {
-    width: 100%;
-    height: 6rem;
-    resize: none;
-    font-size: 1.3em;
+  width: 100%;
+  height: 6rem;
+  resize: none;
+  font-size: 1.3em;
 }
 
 /* Kopjes */
 
-
 h1 {
-    margin-top: 2rem;
-    text-decoration: overline;
-    margin-bottom: 2em;
+  margin-top: 2rem;
+  text-decoration: overline;
+  margin-bottom: 2em;
 }
 
-
-
 h2 {
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    margin-top: .3em;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin-top: 0.3em;
 }
 
 h3 {
-    color: black;
-    font-size: 1.1em;
-    margin-top: .4em;
-    letter-spacing: 0.05em;
-    text-decoration: underline;
+  color: black;
+  font-size: 1.1em;
+  margin-top: 0.4em;
+  letter-spacing: 0.05em;
+  text-decoration: underline;
 }
 
 legend {
-    font-size: 1.7rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-decoration: overline;
+  font-size: 1.7rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: overline;
 }
 
 header {
-    position: relative;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-
 
 /* Button Styling */
 
 button {
-    background-color: #ffbe0b;
-    color: black;
-    border: 0;
-    padding: 10px;
-    box-shadow: inset 0 0 3px;
-    font-weight: bold;
-    cursor: pointer;
-    width: 100px;
+  background-color: #ffbe0b;
+  color: black;
+  border: 0;
+  padding: 10px;
+  box-shadow: inset 0 0 3px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100px;
 }
 
 .buttonfooter {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 
 .button-styling-back {
-    background-color:#cfcfcf ;
+  background-color: #cfcfcf;
 }
 
 .button-styling-back:hover {
-    background-color:#afaeae ;
+  background-color: #afaeae;
 }
 
 .button-styling-next {
-    background-color:#ffb703 ;
+  background-color: #ffb703;
 }
 
 .button-styling-next:hover {
-    background-color: #fdce4b;
+  background-color: #fdce4b;
 }
 
 .button-styling-next:focus {
-    outline: 3px solid white;    
+  outline: 3px solid white;
 }
 
 .button-styling-back:focus {
-    background-color:#afaeae ;
-    outline: 3px solid white;
+  background-color: #afaeae;
+  outline: 3px solid white;
 }
 
 p {
-    display: inline-block;
+  display: inline-block;
 }
 
-input[type=text]:focus {
-    background-color: rgb(224, 224, 224);
+input[type="text"]:focus {
+  background-color: rgb(224, 224, 224);
 }
 
-input[type=text]:hover {
-    background-color: rgb(224, 224, 224);
+input[type="text"]:hover {
+  background-color: rgb(224, 224, 224);
 }
 
-input:invalid{
-    outline: dashed 2px white;
-  }
+input:invalid {
+  outline: dashed 2px white;
+}
 
 input:valid {
-    outline: solid 2px white;
+  outline: solid 2px white;
 }
 
 .error-message {
-    font-size: 1.3em;
-    margin-top: 1em;
+  font-size: 1.3em;
+  margin-top: 1em;
 }
 
 /* Progress bar */
 
 header ul {
-    display:flex;
-    position: absolute;
-    justify-content: space-between;
-    margin-top: 13em;
-    text-align: center;
-    margin-bottom: 5em;
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  margin-top: 13em;
+  text-align: center;
+  margin-bottom: 5em;
 }
 
 header li {
-    width: 20px;
-    height: 20px;
-    background-color:white;
-    margin: 1rem;
-    list-style-type: none;
-    color: black;
-    font-weight: bold;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  margin: 1rem;
+  list-style-type: none;
+  color: black;
+  font-weight: bold;
 }
 
 .progress-active {
-    transform: scale(1.4);
-    background-color: white;
-    color:black;
-    outline: 1px solid black
+  transform: scale(1.4);
+  background-color: white;
+  color: black;
+  outline: 1px solid black;
 }
 
 .progress-done {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 @media (prefers-color-scheme: dark) {
-    .progress-active {
-        background-color: white;
-        color:black;
-        outline: 2px solid white;
-    }
-    
-    .progress-done {
-        background-color: white;
-        color: black;
-    }
-    .score input:checked ~ span {
-        background-color: white;
-        color: black;
-    }
-    body {
-        background-color: #121212;
-    }
-    fieldset {
-        background-color: #121212;
-    }
-    .score label:hover {
-        background-color: rgb(224, 224, 224);
-    }
-    h3 {
-        color: white;
-    }
-    .score input:checked ~ span {
-        background-color: #8899A6;
-        color: white;
-    }
+  .progress-active {
+    background-color: white;
+    color: black;
+    outline: 2px solid white;
   }
 
-  /* Button Styling */
+  .progress-done {
+    background-color: white;
+    color: black;
+  }
+  .score input:checked ~ span {
+    background-color: white;
+    color: black;
+  }
+  body {
+    background-color: #121212;
+  }
+  fieldset {
+    background-color: #121212;
+  }
+  .score label:hover {
+    background-color: rgb(224, 224, 224);
+  }
+  h3 {
+    color: white;
+  }
+  .score input:checked ~ span {
+    background-color: #8899a6;
+    color: white;
+  }
+}
 
-  fieldset:nth-of-type(7) .buttonfooter {
-    position: absolute;
-    
+/* Button Styling */
+
+fieldset:nth-of-type(7) .buttonfooter {
+  position: absolute;
 }
 
 fieldset:nth-of-type(7) .buttonfooter input {
-    position: relative;
-    margin-left: 22.5em;
-    background-color: #ffbe0b;
-    color: black;
-    border: 0;
-    padding: 10px;
-    box-shadow: inset 0 0 3px;
-    font-weight: bold;
-    cursor: pointer;
-    width: 100px;
-    outline: 0px;
+  position: relative;
+  margin-left: 22.5em;
+  background-color: #ffbe0b;
+  color: black;
+  border: 0;
+  padding: 10px;
+  box-shadow: inset 0 0 3px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100px;
+  outline: 0px;
 }
 
 fieldset:nth-of-type(7) .buttonfooter input:hover {
-    background-color: #fdce4b;
+  background-color: #fdce4b;
 }
-
