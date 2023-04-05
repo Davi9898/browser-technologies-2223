@@ -9,7 +9,8 @@ Voor het vak Browsertechnologies ben ik aan de slag gegaan om een enquête te ma
 ### Functional layer
 ![functionallayer](https://user-images.githubusercontent.com/76910947/230208322-a676bb26-73a1-4fa4-9494-4bd970b7a2cf.png)
 ### Flow schema
-![image 2](https://user-images.githubusercontent.com/76910947/230213220-5027545b-c85c-4b79-bef0-5a0e8d9d2c39.png)
+![Frame 1 (14)](https://user-images.githubusercontent.com/76910947/230213271-f0b59808-c572-42aa-9956-2f997412a522.png)
+
 
 
 
