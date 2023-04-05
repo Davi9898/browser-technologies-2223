@@ -118,3 +118,8 @@ Iets wat meteen opvalt is dat hier geen local storage aanwezig is. Ook is de pro
 Mijn enquête werkt goed op alle browsers behalve als je deze in een obscure text browser gaat bezoeken. Zelfs dan kun je nog gewoon de enquête doorlopen en het formulier submitten. Echter werken alle andere leuke features niet meer. Houdt het dus gewoon bij een Chrome of een Firefox.
 
 ## Sources <a name="paragraph8"></a>
+* https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection
+* https://medium.com/data-breach/introduction-to-feature-detection-and-matching-65e27179885d
+* https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
+* https://www.tutorialspoint.com/javascript/javascript_form_validations.htm
+* 
