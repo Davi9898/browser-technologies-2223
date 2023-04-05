@@ -4,28 +4,68 @@
     padding: 0;
 }
 
+/* Feature detection*/
+
+@supports (-webkit-appearance:none) or (-moz-appearance:none) or (appearance:none) {
+    /* Feature is supported, add styles here */
+    .score input:checked ~ span {
+      background-color: black;
+      color: white;
+    }
+  }
+
+@supports (-webkit-appearance:none) {
+    .score input:checked ~ span {
+      background-color: black;
+      color: white;
+    }
+  }
+  
+  @supports not (-webkit-appearance:none) {
+    .score input:checked ~ span {
+      background-color: blue;
+      color: white;
+    }
+  }
+   
+  @media (pointer: fine) {
+    button {
+      font-size: 1.0em;
+    }
+  }
+  
+  @media (pointer: coarse) {
+    button {
+      font-size: 1.0em;
+    }
+  }
+
+
 body {
-    font-family: 'Roboto Slab', serif;
-    background-color: #219ebc;
+    font-family: 'Roboto Slab', serif, Arial, Helvetica, sans-serif;
+    background-color: #4773aa;
     align-items: center;
     display: flex;
     flex-direction: column;
-    color: white;
+    color: #ffffff;
 }
 
-
-fieldset {
-    background: #219ebc;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+@supports (display:flex) {
+    fieldset {
+        background: #4773aa;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
 }
 
 section {
-    width: 400px;;
+    width: 400px;
+    margin-top: 5em;
 }
 
 form {
@@ -53,10 +93,6 @@ fieldset:nth-of-type(1) input {
     width: 300px;
     padding: 10px;
     border-radius: 10px;
-}
-
-fieldset:nth-of-type(2) label {
-    /* display: block; */
 }
 
 .score {
@@ -88,6 +124,8 @@ fieldset:nth-of-type(2) label {
     cursor: pointer;
 }
 
+
+
 .score input:focus ~ span {
     outline:  2px solid black;
     background-color: #a8d1fc;
@@ -111,7 +149,7 @@ fieldset:nth-of-type(2) label {
 }
 
 .score input:checked ~ span {
-    background-color: #0069d9;
+    background-color: black;
     color: white;
 }
 
@@ -162,11 +200,13 @@ h2 {
 
 h3 {
     color: black;
-    font-size: 1em;
+    font-size: 1.1em;
     margin-top: .4em;
+    letter-spacing: 0.05em;
+    text-decoration: underline;
 }
 
-
+/* Button Styling */
 
 .buttonfooter {
     display: flex;
@@ -178,12 +218,37 @@ h3 {
     background-color:#cfcfcf ;
 }
 
+.button-styling-back:hover {
+    background-color:#afaeae ;
+}
+
 .button-styling-next {
     background-color:#ffb703 ;
 }
 
+.button-styling-next:hover {
+    background-color: #fdce4b;
+}
+
+.button-styling-next:focus {
+    outline: 3px solid white;    
+}
+
+.button-styling-back:focus {
+    background-color:#afaeae ;
+    outline: 3px solid white;
+}
+
 p {
     display: inline-block;
+}
+
+input[type=text]:focus {
+    background-color: rgb(224, 224, 224);
+}
+
+input[type=text]:hover {
+    background-color: rgb(224, 224, 224);
 }
 
 input:invalid{
@@ -198,3 +263,92 @@ input:valid {
     font-size: 1.3em;
     margin-top: 1em;
 }
+
+/* Progress bar */
+
+header ul {
+    display:flex;
+    position: absolute;
+    justify-content: space-between;
+    margin-top: 10em;
+    text-align: center;
+}
+
+header li {
+    width: 20px;
+    height: 20px;
+    background-color:white;
+    margin: 1rem;
+    list-style-type: none;
+    color: black;
+    font-weight: bold;
+}
+
+.progress-active {
+    transform: scale(1.4);
+    background-color: white;
+    color:black;
+    outline: 1px solid black
+}
+
+.progress-done {
+    background-color: black;
+    color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+    .progress-active {
+        background-color: white;
+        color:black;
+        outline: 2px solid white;
+    }
+    
+    .progress-done {
+        background-color: white;
+        color: black;
+    }
+    .score input:checked ~ span {
+        background-color: white;
+        color: black;
+    }
+    body {
+        background-color: #121212;
+    }
+    fieldset {
+        background-color: #121212;
+    }
+    .score label:hover {
+        background-color: rgb(224, 224, 224);
+    }
+    h3 {
+        color: white;
+    }
+    .score input:checked ~ span {
+        background-color: #8899A6;
+        color: white;
+    }
+  }
+
+  fieldset:nth-of-type(7) .buttonfooter {
+    position: absolute;
+    
+}
+
+fieldset:nth-of-type(7) .buttonfooter input {
+    position: relative;
+    margin-left: 22.5em;
+    background-color: #ffbe0b;
+    color: black;
+    border: 0;
+    padding: 10px;
+    box-shadow: inset 0 0 3px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100px;
+    outline: 0px;
+}
+
+fieldset:nth-of-type(7) .buttonfooter input:hover {
+    background-color: #fdce4b;
+}
+
