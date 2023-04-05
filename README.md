@@ -33,7 +33,7 @@ Desktop
 * Edge
 * UC browser 
 <br>
-**Mobile**
+Mobile<br>
 IOS:
 
 * Safari
