@@ -190,7 +190,10 @@ header {
 h1 {
     margin-top: 2rem;
     text-decoration: overline;
+    margin-bottom: 2em;
 }
+
+
 
 h2 {
     font-size: 1.2rem;
@@ -272,6 +275,7 @@ header ul {
     justify-content: space-between;
     margin-top: 10em;
     text-align: center;
+    margin-bottom: 5em;
 }
 
 header li {
