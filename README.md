@@ -37,7 +37,7 @@ Mobile<br>
 IOS:
 
 * Safari
-* 
+
 Android:
 * Chrome
 
